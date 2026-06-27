@@ -39,7 +39,7 @@ image2 && formData.append("image2", image2)
 image3 && formData.append("image3", image3)
 image4 && formData.append("image4", image4)
 
-const alldata = await axios.post("http://localhost:8000/add", formData) 
+const alldata = await axios.post("http://localhost:8000/api/product/add", formData) 
 if(alldata.data.success){
   toast.success(alldata.data.message);
   setName("");
