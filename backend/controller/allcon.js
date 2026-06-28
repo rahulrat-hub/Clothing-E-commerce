@@ -1,3 +1,6 @@
+import {v2 as cloudinary} from 'cloudinary'
+import fs from "fs/promises"
+
 export const addProduct = async (req,res)=>{
     
 try{
@@ -8,7 +11,7 @@ const image2 = req.files?.image2?.[0]
 const image3 = req.files?.image3?.[0]
 const image4 = req.files?.image4?.[0]
 
-cosnt images = [image1, image2, image3, image4].filter(Boolean)
+const images = [image1, image2, image3, image4].filter(Boolean)
 
 const imageUrl = await Promise.all(
 
@@ -16,6 +19,10 @@ const imageUrl = await Promise.all(
         const result = await cloudinary.uploader.upload(file.path, {
              resource_type : "image"
         })
+
+        // {permanent delete}
+        await fs.unlink(file.path)
+
        return result.secure_url
     })
 
