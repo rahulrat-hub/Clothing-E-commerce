@@ -53,7 +53,9 @@ if(alldata.data.success){
   toast.error(alldata.data.message)
 } 
 }catch (error){
-  toast.error(error.message)
+  console.log(error.message)
+  console.log(error.response?.data)
+  toast.error(error.response?.data?.message || error.message)
 }
 }
 
