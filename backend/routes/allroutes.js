@@ -1,5 +1,5 @@
 import express from 'express'
-import {addProduct} from '../controller/allcon.js'
+import {addProduct, listProduct} from '../controller/allcon.js'
 import upload from '../middleware/multer.js'
 
 const allRouter = express.Router()
@@ -12,5 +12,7 @@ allRouter.post("/add",
         {name : "image4", maxCount : 1},
     ]),
     addProduct)
+    
+    allRouter.get("/list", listProduct);
 
 export default allRouter

@@ -1,5 +1,6 @@
 import {v2 as cloudinary} from 'cloudinary'
 import fs from "fs/promises"
+import productModel from '../Models/productModel.js'
 
 export const addProduct = async (req,res)=>{
     
@@ -51,4 +52,24 @@ res.json({
         msg : error.message,
     })
 }
+}
+
+
+export const listProduct = async (req,res)=> {
+
+   try{
+     const seeProduct = await productModel.find() 
+    res.json({
+        success : true,
+        msg : "product found",
+        seeProduct,
+    })
+   
+} catch (error){
+    res.status(500).json({
+        success : false,
+        msg : error.message,
+    })
+}
+
 }
