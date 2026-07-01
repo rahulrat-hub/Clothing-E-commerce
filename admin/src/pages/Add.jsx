@@ -40,6 +40,10 @@ image3 && formData.append("image3", image3)
 image4 && formData.append("image4", image4)
 
 const alldata = await axios.post("http://localhost:8000/api/product/add", formData) 
+console.log(image1);
+console.log(image2);
+console.log(image3);
+console.log(image4);
 if(alldata.data.success){
   toast.success(alldata.data.message);
   setName("");
@@ -201,7 +205,7 @@ return (
                   )}
                     type="button"
                     key={size}
-                    className="bg-slate-100 px-5 py-2 rounded cursor-pointer"
+                    className={`bg-slate-100 px-5 py-2 rounded cursor-pointer ${sizes.includes(size) ? "bg-gray-50 border text-red-600" : "bg-slate-200"}`}
                   >
                     {size}
                   </button>
