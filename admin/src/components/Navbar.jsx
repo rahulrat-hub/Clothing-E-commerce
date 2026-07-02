@@ -2,7 +2,7 @@ import React from 'react'
 
 function Navabr() {
   return (
-    <div className="flex items-center justify-between px-8 py-4 border-b">
+    <div className="flex items-center justify-between px-8 py-4 border-b bg-[#141D2D] border-white text-white">
         <div className="flex items-center gap-2">
           {/* <img
             src="https://via.placeholder.com/120x40"

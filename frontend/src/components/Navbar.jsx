@@ -5,16 +5,17 @@ import { NavLink } from 'react-router-dom';
 function Navbar() {
   return (
      <div className="border-b h-15">
-        <nav className='flex justify-between h-full'>
+        <nav className='flex justify-between h-full '>
           {/* {Right side section } */}
-          <div className="right flex gap-10 items-center px-20 font-bold text-sm uppercase tracking-wide">
+          <div className="right flex gap-8 items-center px-10 font-bold text-sm uppercase tracking-wide">
             <NavLink to='/' className={({ isActive })=> isActive ? "text-blue-500" : ""}>Home</NavLink>
             <NavLink to='/Collection' className={({ isActive })=> isActive ? 'text-blue-500' : ""}>Collection</NavLink>
             <NavLink to='/About'className={({ isActive })=> isActive ? 'text-blue-500' : ""} >About</NavLink>
+            <NavLink to='/Contact'className={({ isActive })=> isActive ? 'text-blue-500' : ""} >Contact</NavLink>
           </div>
 
 {/* {middle section } */}
-<div className="">
+<div className="mr-20">
 <NavLink to='/'> <img className='h-full w-full' src={assets.logo} alt="" /></NavLink> 
 </div>
 

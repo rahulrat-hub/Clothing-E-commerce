@@ -1,4 +1,5 @@
 import React from 'react'
+import {NavLink} from 'react-router-dom'
 import { assets } from '../assets/frontend_assets/assets'
 
 function Footer() {
@@ -28,10 +29,10 @@ function Footer() {
 
           {/* Menu */}
           <div className="flex gap-10 text-sm tracking-[3px]">
-            <p className="cursor-pointer hover:text-blue-400">COLLECTION</p>
-            <p className="cursor-pointer hover:text-blue-400">ABOUT</p>
-            <p className="cursor-pointer hover:text-blue-400">BLOG</p>
-            <p className="cursor-pointer hover:text-blue-400">CONTACT</p>
+            <NavLink to='/Collection' className="cursor-pointer hover:text-blue-400">COLLECTION</NavLink>
+            <NavLink to='/About' className="cursor-pointer hover:text-blue-400">ABOUT</NavLink>
+            <NavLink to='/blog' className="cursor-pointer hover:text-blue-400">BLOG</NavLink>
+            <NavLink to='/Contact' className="cursor-pointer hover:text-blue-400">CONTACT</NavLink>
           </div>
         </div>
 

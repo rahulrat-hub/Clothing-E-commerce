@@ -62,10 +62,7 @@ import exchange_icon from "./exchange_icon.png";
 import profile_icon from "./profile_icon.png";
 import quality_icon from "./quality_icon.png";
 import search_icon from "./search_icon.png";
-import star_dull_icon from "./star_dull_icon.png";
-import star_icon from "./star_icon.png";
 import support_img from "./support_img.png";
-import about_img from "./about_img.png";
 import razorpay_logo from "./razorpay_logo.png";
 import stripe_logo from "./stripe_logo.png";
 import cross_icon from "./cross_icon.png";
@@ -74,6 +71,7 @@ import foot from './foot.jpg';
 import about from './about.mp4';
 import story from './story.mp4';
 import end from './end.mp4';
+import contact from './contact.png'
 
 export const assets = {
   logo,
@@ -83,11 +81,8 @@ export const assets = {
   profile_icon,
   quality_icon,
   search_icon,
-  star_dull_icon,
-  star_icon,
   bin_icon,
   support_img,
-  about_img,
   razorpay_logo,
   stripe_logo,
   cross_icon,
@@ -95,7 +90,8 @@ export const assets = {
   foot,
   about,
   story,
-  end
+  end,
+  contact
 };
 
 export const products = [

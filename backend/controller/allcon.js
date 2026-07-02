@@ -1,6 +1,7 @@
 import {v2 as cloudinary} from 'cloudinary'
 import fs from "fs/promises"
 import productModel from '../Models/productModel.js'
+import OrderModel from '../Models/OrderModel.js'
 
 export const addProduct = async (req,res)=>{
     
@@ -72,4 +73,23 @@ export const listProduct = async (req,res)=> {
     })
 }
 
+}
+
+export const Orderlist = async (req,res)=>{
+
+    let {userId, items, amount, address, paymentmethod, } = req.body
+
+    const order = await OrderModel.create({
+        userId,
+        items,
+        amount,
+        address,
+        paymentmethod
+    })
+
+    res.json({
+        success : true,
+        msg : "Order Place",
+        order
+    })
 }
