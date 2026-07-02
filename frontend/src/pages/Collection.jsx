@@ -68,7 +68,7 @@ setData(copyProducts)
         <input onChange={searchQuery}
         className="border w-150 p-2 m-10 rounded-sm "
         type="text" placeholder="SEARCH...." />
-        <i className='absolute top-12 right-85 cursor-pointer'><RiSearchLine /></i>
+        <i className='top-27 right-70 fixed cursor-pointer'><RiSearchLine /></i>
       </div>
 
       <div className="sort absolute top-11 right-20 border px-2 py-1">

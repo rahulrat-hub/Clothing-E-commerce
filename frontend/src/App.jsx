@@ -1,5 +1,5 @@
 import React from 'react'
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import { Route, Routes } from 'react-router-dom'
 import Home from './pages/Home'
 import Navbar from './components/Navbar'
 import Collection from './pages/Collection'
@@ -14,7 +14,7 @@ import SingleProduct from './pages/SingleProduct'
 function App() {
   return (
     <div className='min-h-screen'>
-    <BrowserRouter>
+   
     <Navbar />
   <Routes>
     <Route path='/' element={<Home />} />
@@ -26,7 +26,7 @@ function App() {
       <Route path='/SizeChart' element={<SizeChart />} />
     <Route path='/product/:pid' element={<SingleProduct />} />
   </Routes>
-    </BrowserRouter>
+   
     </div>
   )
 }
