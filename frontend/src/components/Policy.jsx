@@ -1,4 +1,5 @@
 import React from "react";
+import {NavLink} from 'react-router-dom'
 
 function Policy() {
   return (
@@ -110,9 +111,9 @@ function Policy() {
 
         <div className="border p-6 rounded-xl hover:shadow-md transition">
           <p>Find your perfect fit with our size guide.</p>
-          <button className="mt-4 px-6 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition">
+         <p className="mt-4"><NavLink to="/SizeChart" className="m- px-6 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition">
             View Size Chart
-          </button>
+          </NavLink></p>
         </div>
       </section>
 

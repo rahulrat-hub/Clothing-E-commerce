@@ -11,7 +11,7 @@ function Card({image, name, price, id }) {
 <div className="flex justify-between ">
   <p className='border w-12 p-1'>${price}</p>
 
-<button className='border text-sm p-1'>ADD TO CART</button>
+<button className='border text-sm p-1 cursor-pointer'>ADD TO CART</button>
 </div>
 
 </Link>

@@ -72,6 +72,7 @@ import about from './about.mp4';
 import story from './story.mp4';
 import end from './end.mp4';
 import contact from './contact.png'
+import sizechart from './sizechart.jpg'
 
 export const assets = {
   logo,
@@ -91,7 +92,8 @@ export const assets = {
   about,
   story,
   end,
-  contact
+  contact,
+  sizechart
 };
 
 export const products = [

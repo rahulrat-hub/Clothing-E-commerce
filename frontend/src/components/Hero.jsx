@@ -1,6 +1,7 @@
 import React from "react";
 import { assets } from "../assets/frontend_assets/assets";
 import {RiArrowRightLine} from "@remixicon/react";
+import {NavLink} from 'react-router-dom'
 
 
 
@@ -21,8 +22,8 @@ function Hero() {
       <p className="absolute top-150 left-10 w-120 text-md text-white border-b">Minimal pieces designed to elevate your everyday look. Crafted for confidence, built for expression.</p>
    </div>
    <div className="">
-      <button className="border p-2 w-60 absolute top-169.75 left-80 bg-white text-[#1f29e1]">SHOP MORE</button>
-    <i className="absolute top-172 left-123 text-zinc-500"><RiArrowRightLine /></i>
+      <NavLink to="/Collection" className="border p-2 w-40 absolute top-169.75 left-80 bg-white text-[#1f29e1]">SHOP MORE</NavLink>
+    <i className="absolute top-172 left-108 text-zinc-500"><RiArrowRightLine /></i>
    </div>
     </div>
   );
